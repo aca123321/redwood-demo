@@ -25,23 +25,23 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
           ) : (
             <Link to={routes.login()}>Login</Link>
           )}
-          <nav>
-            <ul>
-              <li>
-                <Link to={routes.home()}>Home</Link>
-              </li>
-              <li>
-                <Link to={routes.posts()}>Posts</Link>
-              </li>
-              <li>
-                <Link to={routes.about()}>About</Link>
-              </li>
-              <li>
-                <Link to={routes.contact()}>Contact</Link>
-              </li>
-            </ul>
-          </nav>
         </div>
+        <nav>
+          <ul>
+            <li>
+              <Link to={routes.home()}>Home</Link>
+            </li>
+            <li>
+              <Link to={routes.posts()}>Posts</Link>
+            </li>
+            <li>
+              <Link to={routes.about()}>About</Link>
+            </li>
+            <li>
+              <Link to={routes.contact()}>Contact</Link>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>{children}</main>
     </>
