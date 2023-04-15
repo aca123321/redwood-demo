@@ -14,7 +14,7 @@ export const schema = gql`
   input CreatePostInput {
     title: String!
     body: String!
-    created_at: DateTime!
+    created_at: DateTime
   }
 
   input UpdatePostInput {
