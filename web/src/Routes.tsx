@@ -16,7 +16,7 @@ const Routes = () => {
   return (
     <Router>
       <Set wrap={BlogLayout}>
-        <div className="border border-gray-400">
+        <div className="border-solid border-2 border-slate-300 rounded-sm mx-2">
           <Set wrap={ScaffoldLayout} title="Posts" titleTo="posts" buttonLabel="New Post" buttonTo="newPost">
             <Route path="/posts/new" page={PostNewPostPage} name="newPost" />
             <Route path="/posts/{id:Int}/edit" page={PostEditPostPage} name="editPost" />
