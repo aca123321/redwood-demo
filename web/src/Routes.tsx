@@ -16,7 +16,7 @@ const Routes = () => {
   return (
     <Router>
       <Set wrap={BlogLayout}>
-        <div className="border-solid border-2 border-slate-300 rounded-sm mx-2">
+        <div className="mx-2 rounded-sm border-2 border-solid border-slate-300">
           <Set wrap={ScaffoldLayout} title="Posts" titleTo="posts" buttonLabel="New Post" buttonTo="newPost">
             <Route path="/posts/new" page={PostNewPostPage} name="newPost" />
             <Route path="/posts/{id:Int}/edit" page={PostEditPostPage} name="editPost" />
@@ -26,6 +26,7 @@ const Routes = () => {
         </div>
         <Route path="/about" page={AboutPage} name="about" />
         <Route path="/" page={HomePage} name="home" />
+        <Route path="/article/{id:Int}" page={ArticlePage} name="article" />
         <Route notfound page={NotFoundPage} />
       </Set>
     </Router>
